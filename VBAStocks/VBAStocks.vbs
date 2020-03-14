@@ -29,3 +29,17 @@ Sub FizzBuzz()
     Next i
 
 End Sub
+
+Sub nested_for_loop_plus_counter():
+    my_first_counter = 0
+    For i=1 to 3
+        For j=1 to 5
+            cells(i,j) = str(i) + " " + str(j)
+            ' msgBox(str(i) + " " + str(j))
+            my_first_counter = my_first_counter + 1
+        next j
+    next i
+
+    msgBox(my_first_counter)
+    
+End Sub
